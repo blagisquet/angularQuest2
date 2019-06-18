@@ -1,0 +1,16 @@
+
+<div class="card" style="width: 18rem;">
+  <img [src]="user.photo" class="card-img-top" [alt]="user.firstName">
+  <div class="card-body">
+    <h3 class="card-title">{{ user.firstName }} {{ user.name }}</h3>
+      <h4 *ngIf="show">{{ user.age }}</h4>
+
+    
+    <button (click)="hideAge()">{{ buttonName }}</button>
+    <p class="card-text">{{ user.quote }}</p>
+    <label>
+      <input [(ngModel)]="user.quote" type="email" class="form-control" name="email" />
+    </label>
+  </div>
+</div>
+
