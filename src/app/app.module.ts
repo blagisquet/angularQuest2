@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { StyleDirective } from './style.directive';
 import { ShowMoviesDirective } from './show-movies.directive';
-
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
+import { MenuComponent } from './menu/menu.component';
 @NgModule({
   declarations: [
     AppComponent,
     UserProfileComponent,
     StyleDirective,
-    ShowMoviesDirective
+    ShowMoviesDirective,
+    SignUpComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]
