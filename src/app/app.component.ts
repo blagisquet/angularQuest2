@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quest2';
+
+  showMovies:boolean = true;
 }
